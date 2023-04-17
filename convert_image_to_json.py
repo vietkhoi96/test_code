@@ -5,8 +5,6 @@ a =[]
 path_to_image = '/home/khoinv/Downloads/excel.jpg'
 img = Image.open(path_to_image)
 text = pytesseract.image_to_string(img)
-#with open('text.txt', 'w') as f:
-#    f.write(text)
+with open('text.txt', 'w') as f:
+    f.write(text)
 print(text)
-#a.append(text)
-#print(a)
